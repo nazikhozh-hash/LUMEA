@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>LUMÉA — магазин корейской косметики</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="w">
+            <div class="hd">
+                <div class="nav"><button class="burger ib" data-act="menu" aria-label="Меню"><svg viewBox="0 0 24 24">
+                            <path d="M3 6h18M3 12h18M3 18h18" />
+                        </svg></button>
+                    <a href="#/catalog?all">Каталог</a><a href="#/brands">Бренды</a><a
+                        href="#/catalog?sale=1">Акции</a><a href="#/about">О нас</a>
+                </div>
+                <a class="logo" href="#/" id="logo">LUMÉA</a>
+                <div class="tools"><button class="lg" data-act="lang" aria-label="Тіл / Язык"><span
+                            data-l="ru">RU</span><span data-l="kk">ҚАЗ</span></button><input class="sq"
+                        placeholder="Поиск товаров" aria-label="Поиск"><button class="ib sb" data-act="search"
+                        aria-label="Найти"><svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="6" />
+                            <path d="M20 20l-4-4" />
+                        </svg></button>
+                    <a class="ib" href="#/favorites" aria-label="Избранное"><svg viewBox="0 0 24 24">
+                            <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z" />
+                        </svg><span class="cnt" id="cf"></span></a>
+                    <a class="ib" href="#/cart" aria-label="Корзина"><svg viewBox="0 0 24 24">
+                            <path d="M5 8h14l-1 12H6zM9 8a3 3 0 0 1 6 0" />
+                        </svg><span class="cnt" id="cc"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="drawer"><input class="sq" placeholder="Поиск товаров"><a href="#/catalog?all">Каталог</a><a
+                href="#/brands">Бренды</a><a href="#/catalog?sale=1">Акции</a><a href="#/about">О нас</a></div>
+    </header>
+    <main id="app"></main>
+    <footer>
+        <div class="w">
+            <div class="fg">
+                <div>
+                    <h5>Контакты</h5><a id="fph"></a><a id="fad"></a>
+                </div>
+                <div>
+                    <h5>Магазин</h5><a href="#/catalog?all">Каталог</a><a href="#/catalog?sale=1">Акции</a><a
+                        href="#/about">О нас</a><a href="#/about">Доставка и оплата</a><a href="#" data-act="chat">Тех.
+                        поддержка</a>
+                </div>
+                <div>
+                    <h5>Бренды</h5><span id="fbr"></span>
+                </div>
+                <div>
+                    <h5>Поиск по каталогу</h5><input class="sq" placeholder="Поиск товаров">
+                    <h5 style="margin-top:18px">Мы в соцсетях</h5>
+                    <div class="soc"><a href="#">TG</a><a href="#">VK</a><a href="#">IG</a></div>
+                </div>
+            </div>
+            <div class="fbig" id="fl">LUMÉA</div>
+            <div class="ftag" id="ft"></div>
+            <div class="fb"><span>Политика конфиденциальности · Согласие на обработку данных · Публичная
+                    оферта</span><span id="fc"></span><button class="lg lgf" data-act="lang"
+                    aria-label="Тіл / Язык"><span data-l="ru">RU</span><span data-l="kk">ҚАЗ</span></button></div>
+        </div>
+    </footer>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
